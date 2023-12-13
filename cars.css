@@ -1,0 +1,208 @@
+body {
+    background: #f7c887;
+    overflow: hidden;
+    clear: both;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 97vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.red_track{
+    padding: 0;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    border-right: solid gray 2px;
+    height: 100%;
+}
+.blue_track{
+    padding: 0;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    border-right: solid gray 2px;
+    height: 100%;
+}
+.track1{
+    padding: 0;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    border-left: solid grey 2px;
+    border-right: solid grey 2px;
+    height: 100%;
+}
+.track2{
+    padding: 0;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    border-left: solid grey 2px;
+    border-right: solid grey 2px;
+    height: 100%;
+}
+
+.car1{
+   z-index: 100; 
+   height: 70px;
+   width: 50px;
+   border-radius: 20%;
+   background-color: rgb(0, 115, 255);
+   /*border: solid white 4px;*/
+   position :absolute;
+   box-shadow:inset 0px 0px 0px 5px white;
+   left :35%;
+   top :80%;
+
+   transition: 0.5s;
+}
+.car2{
+   z-index: 100;
+   height: 70px;
+   width: 50px;
+   border-radius: 20%;
+   /*border: solid white 4px;*/
+   background-color: red;
+   box-shadow:inset 0px 0px 0px 5px white;
+   position :absolute;
+   left :55%;
+   top :80%;
+   transition: 0.5s;
+
+}
+.food{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   background-color: white;
+   border: solid rgb(0, 115, 255) 10px;
+   position :absolute;
+   left :35%;
+   top :-10%;
+   /*transition:  0.5s;*/
+   /*animation: 2s linear  movedown;*/
+}
+
+.food1{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   background-color: white;
+   border: solid red 10px;
+   position :absolute;
+   right :35%;
+   overflow-y: hidden;
+   top :-10%;
+   /*transition:  0.5s;*/
+   /*animation: 2s linear movedown;*/
+}
+
+.over{
+   font-family: 'Azonix';
+   z-index: 1000000!important;
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.5);
+   top: 0%;
+   left: 0%;
+   display: none;
+   color: white;
+   font-size: 2em;
+   cursor: pointer;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.stone{
+   height: 30px;
+   width: 30px;
+   border-radius: 10%;
+   background-color: white;
+   border: solid red 10px;
+   position :absolute;
+   right :35%;
+   top :-10%;
+/*    transition: 0.5s;
+   animation: 2s linear movedown;*/
+}.stone1{
+   height: 30px;
+   width: 30px;
+   border-radius: 10%;
+   background-color: white;
+   border: solid rgb(0, 115, 255) 10px;
+   position :absolute;
+   right :35%;
+   top :-10%;
+/*    transition: 0.5s;
+   animation: 2s linear movedown;*/
+}
+
+.triangleL {
+   width: 0;
+   height: 0;
+   border-left: 25px solid transparent;
+   border-right: 25px solid transparent;
+   border-bottom: 44px solid white;
+   position: absolute;
+   background-color: rgb(14, 20, 14);
+   right: 35%;
+   top: -10%;
+   /* transition: 0.5s; */
+}
+.triangleR {
+   width: 0;
+   height: 0;
+   border-left: 25px solid transparent;
+   border-right: 25px solid transparent;
+   border-bottom: 44px solid white;
+   position: absolute;
+   background-color: rgb(14, 20, 14);
+   right: 35%;
+   top: -10%;
+   /* transition: 0.5s; */
+}
+
+img{
+   position: absolute;
+   display: none;
+}
+
+.fas-fa-volume-up{
+   position: absolute;
+   top:0;
+   color:white;
+   font-size: 25px;
+}
+
+.exploder{
+   mix-blend-mode: screen;
+   width:200px;
+}
+.explodel{
+   mix-blend-mode: screen;
+   width:200px;
+}
+.idscore{
+   position: absolute;
+   top:10px;
+   right:10px;
+   z-index: 1000;
+   color:white;
+   font-family: 'Azonix';
+   font-size: 3em
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 3 JavaScript Game">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="author" content="Swanand Khonde">
+<title>2cars</title>
+<link rel="stylesheet"href="cars.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<link rel="shortcut icon" href="#">
+
+</head>
+<body >
+
+
+<audio id="Audio" src="bg.mp3" preload="auto">
+</audio>
+<a onClick="togglePlay()"><i class="fas fa-volume-up"></i></a>
+<img id ="explode_left" src="e.gif" class="explodel">
+<img id ="explode_right" src="e.gif" class="exploder">
+
+
+<div  id="over"class="over"onclick="playMusic()">
+<center>
+<p>  
+<h1 id="display">GAME OVER</h1>
+<h1>Score</h1><h2 id="last_score">0<h2>
+
+<div class="high-score" id="high-score">High Score: 0</div>
+<div id="timePlayed">Time Played: 0 seconds</div>
+<div id="speedValue" hidden>Speed: </div>
+</p>
+<i class="fas fa-play"></i>
+<br>
+<br>
+<h6><h6>
+<span id="forlaptop"> Controls: Use Mouse. Click on left track for left car and right track for right car<span>
+
+</center>
+</div>
+  
+  <audio id="bg" src="bg.mp3" muted >
+      
+  </audio>
+
+<div id="score" class="idscore">0</div>
+
+<div class="container"id="contain">
+<div class="red_track" id ="red_track">
+<div id="car1"class="car1"></div>
+<div class="track1"></div>
+<div class="track2"></div>
+<div class="track3"></div>
+
+</div>
+
+<div class="blue_track" id ="blue_track">
+<div id="car2"class="car2"></div>
+<div class="track1"></div>
+<div class="track2"></div>
+<div class="track3"></div>
+
+</div>
+
+</div>
+
+<script src="cars.js"></script>
+
+
+</body>
+</html>
